@@ -58,11 +58,25 @@ header h1 {
 
 #wardrobe {
   display: flex;
-  justify-content: center;
+  gap: 10px;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
+
+.clothingItem {
+  font-size: 2rem;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.clothingItem:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
 
 .clothing {
   font-size: 2.2em;
@@ -115,3 +129,4 @@ header h1 {
   color: #00796b;
   min-height: 24px;
 }
+
