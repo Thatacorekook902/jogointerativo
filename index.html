@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pegue a Roupa Certa!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="gameContainer">
+    <header>
+      <h1>👕 Pegue a Roupa Certa!</h1>
+    </header>
+
+    <section id="gameArea">
+      <div id="hintBox">🤔 Dica: <span id="hint">Carregando...</span></div>
+      <div id="character" aria-label="Personagem">🧍‍♂️</div>
+      <div id="wardrobe">
+        <!-- Roupas serão inseridas aqui via JS -->
+      </div>
+    </section>
+
+    <div id="info">
+      <p>Pontuação: <span id="score">0</span></p>
+      <p>Tempo: <span id="time">60</span>s</p>
+    </div>
+
+    <button id="startBtn">🎮 Iniciar</button>
+    <div id="message"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

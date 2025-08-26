@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameContainer {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2em;
+  color: #4b3f72;
+  margin-bottom: 20px;
+}
+
+#hintBox {
+  background-color: #fffae6;
+  border: 2px dashed #ffd166;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#character {
+  font-size: 5em;
+  margin: 25px 0;
+  background-color: #e0f7fa;
+  border: 3px dashed #26c6da;
+  border-radius: 15px;
+  padding: 20px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+#wardrobe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.clothing {
+  font-size: 2.2em;
+  padding: 15px;
+  border: 2px solid #bbb;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  cursor: grab;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.clothing:hover {
+  transform: scale(1.15);
+  background-color: #ffe0f0;
+  border-color: #ff5e99;
+}
+
+#info {
+  margin-top: 25px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+#info span {
+  font-weight: bold;
+  color: #ff5e99;
+}
+
+#startBtn {
+  background-color: #4b3f72;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startBtn:hover {
+  background-color: #6a54a3;
+}
+
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #00796b;
+  min-height: 24px;
+}
